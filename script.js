@@ -148,3 +148,32 @@ function Tre() {
     }
     document.getElementById("3").textContent = `Det NEST største tallet er ${answer}`
 }
+
+// Utfordring 4
+
+function Fire() {
+    const challengeTo = [8, 5, 3, 8, 9, 6, 11, 7, 99, 10000, 999, 1]
+    let answer = challengeTo[0]; // lager en midlertidlig variable for største tallet
+    let minst = challengeTo[1]
+    for (let i = 0; i < challengeTo.length; i++) { 
+        if (challengeTo[i] > answer) { // Om den nye tallet sammenlignet med den midlertidige variable er større, da vil answer sin verdi endre til det større tallet
+            answer = challengeTo[i]
+        } 
+    }
+    for (let i = 0; i < challengeTo.length; i++) {
+        if (minst > challengeTo[i]) {
+            minst = challengeTo[i]
+        }
+    }
+    document.getElementById("4").textContent = `Det største tallet er ${answer} og det minste tallet er ${minst}`
+}
+
+// Utfordring 5
+
+const challengeFem = [11, 2, 33, 4, 55, 6, 77, 88, 99, 10];
+
+challengeFem.sort();
+
+function Fem() {
+    
+}
