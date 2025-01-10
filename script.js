@@ -167,13 +167,3 @@ function Fire() {
     }
     document.getElementById("4").textContent = `Det største tallet er ${answer} og det minste tallet er ${minst}`
 }
-
-// Utfordring 5
-
-const challengeFem = [11, 2, 33, 4, 55, 6, 77, 88, 99, 10];
-
-challengeFem.sort();
-
-function Fem() {
-    
-}
